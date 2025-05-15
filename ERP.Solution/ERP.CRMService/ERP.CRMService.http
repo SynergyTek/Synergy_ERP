@@ -1,0 +1,6 @@
+@RP.CRMService_HostAddress = http://localhost:5020
+
+GET {{RP.CRMService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
