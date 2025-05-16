@@ -1,0 +1,12 @@
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\bin\Debug\net8.0\ERP.Shared.deps.json
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\bin\Debug\net8.0\ERP.Shared.dll
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\bin\Debug\net8.0\ERP.Shared.pdb
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\ERP.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\ERP.Shared.AssemblyInfoInputs.cache
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\ERP.Shared.AssemblyInfo.cs
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\ERP.Shared.csproj.CoreCompileInputs.cache
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\ERP.Shared.sourcelink.json
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\ERP.Shared.dll
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\refint\ERP.Shared.dll
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\ERP.Shared.pdb
+D:\Synergy Projects\ERP\ERP.Solution\ERP.Shared\obj\Debug\net8.0\ref\ERP.Shared.dll

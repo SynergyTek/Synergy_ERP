@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tQg6xDqbdZjdG7do+f3WH508d6URvgMOT+IqnOeSdTk=",
+  "Source": "ERP.CMSService",
+  "BasePath": "_content/ERP.CMSService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

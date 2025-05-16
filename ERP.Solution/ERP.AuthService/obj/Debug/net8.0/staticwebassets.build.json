@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cT/NCwtG0ER+aSrJeYsTv5vfQ6N/pDiBb/+hFVYF1m0=",
+  "Source": "ERP.AuthService",
+  "BasePath": "_content/ERP.AuthService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

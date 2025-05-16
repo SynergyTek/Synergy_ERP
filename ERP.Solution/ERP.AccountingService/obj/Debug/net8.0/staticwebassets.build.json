@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4TkxrWyy6HYojZbWIs8I/xqDuXN+WOTBYtpOYuFfsdY=",
+  "Source": "ERP.AccountingService",
+  "BasePath": "_content/ERP.AccountingService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

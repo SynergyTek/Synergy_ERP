@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "/v+PmiRRSk0Pz8PMG3LUN7GuqDDjxxd8oABtB7K2v4M=",
+  "Source": "ERP.SalesService",
+  "BasePath": "_content/ERP.SalesService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Nb1BCq2I8emcelWLGOueeK7MhHSKqzoTNe3j6k0xqGk=",
+  "Source": "ERP.InventoryService",
+  "BasePath": "_content/ERP.InventoryService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

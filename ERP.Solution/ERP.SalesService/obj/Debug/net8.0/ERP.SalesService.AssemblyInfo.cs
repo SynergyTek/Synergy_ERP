@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERP.SalesService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6197288f8b0b3cd9e41f1b0249595912c2ff3bed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39354379faaf0796c6ee4764df6f5e5d75783898")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERP.SalesService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERP.SalesService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
