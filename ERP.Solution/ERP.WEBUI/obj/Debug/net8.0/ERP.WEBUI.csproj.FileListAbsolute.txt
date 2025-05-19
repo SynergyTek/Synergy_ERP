@@ -1,31 +1,62 @@
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\bin\Debug\net8.0\appsettings.Development.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\bin\Debug\net8.0\appsettings.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\bin\Debug\net8.0\ERP.WEBUI.staticwebassets.runtime.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\bin\Debug\net8.0\ERP.WEBUI.exe
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\bin\Debug\net8.0\ERP.WEBUI.deps.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\bin\Debug\net8.0\ERP.WEBUI.runtimeconfig.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\bin\Debug\net8.0\ERP.WEBUI.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\bin\Debug\net8.0\ERP.WEBUI.pdb
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.GeneratedMSBuildEditorConfig.editorconfig
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.AssemblyInfoInputs.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.AssemblyInfo.cs
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.csproj.CoreCompileInputs.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.MvcApplicationPartsAssemblyInfo.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.RazorAssemblyInfo.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.RazorAssemblyInfo.cs
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.sourcelink.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\staticwebassets.build.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\staticwebassets.development.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\staticwebassets\msbuild.ERP.WEBUI.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\staticwebassets\msbuild.build.ERP.WEBUI.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ERP.WEBUI.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ERP.WEBUI.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\scopedcss\bundle\ERP.WEBUI.styles.css
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\scopedcss\projectbundle\ERP.WEBUI.bundle.scp.css
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\refint\ERP.WEBUI.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.pdb
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ERP.WEBUI.genruntimeconfig.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.WEBUI\obj\Debug\net8.0\ref\ERP.WEBUI.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/appsettings.Development.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/appsettings.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.staticwebassets.runtime.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.exe
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.deps.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.runtimeconfig.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.pdb
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.GeneratedMSBuildEditorConfig.editorconfig
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.AssemblyInfoInputs.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.AssemblyInfo.cs
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.csproj.CoreCompileInputs.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.MvcApplicationPartsAssemblyInfo.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.RazorAssemblyInfo.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.RazorAssemblyInfo.cs
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.sourcelink.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets.build.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets.development.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets/msbuild.ERP.WEBUI.Microsoft.AspNetCore.StaticWebAssets.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets/msbuild.build.ERP.WEBUI.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ERP.WEBUI.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ERP.WEBUI.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets.pack.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/scopedcss/bundle/ERP.WEBUI.styles.css
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/scopedcss/projectbundle/ERP.WEBUI.bundle.scp.css
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/refint/ERP.WEBUI.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.pdb
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.genruntimeconfig.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ref/ERP.WEBUI.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/appsettings.Development.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/appsettings.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.staticwebassets.runtime.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.deps.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.runtimeconfig.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/bin/Debug/net8.0/ERP.WEBUI.pdb
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.GeneratedMSBuildEditorConfig.editorconfig
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.AssemblyInfoInputs.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.AssemblyInfo.cs
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.csproj.CoreCompileInputs.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.MvcApplicationPartsAssemblyInfo.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.RazorAssemblyInfo.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.RazorAssemblyInfo.cs
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.sourcelink.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets.build.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets.development.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets/msbuild.ERP.WEBUI.Microsoft.AspNetCore.StaticWebAssets.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets/msbuild.build.ERP.WEBUI.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ERP.WEBUI.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ERP.WEBUI.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/staticwebassets.pack.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/scopedcss/bundle/ERP.WEBUI.styles.css
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/scopedcss/projectbundle/ERP.WEBUI.bundle.scp.css
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/refint/ERP.WEBUI.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.pdb
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ERP.WEBUI.genruntimeconfig.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.WEBUI/obj/Debug/net8.0/ref/ERP.WEBUI.dll

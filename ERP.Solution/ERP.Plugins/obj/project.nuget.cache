@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "65CDxQamS3Q=",
+  "dgSpecHash": "KwNI6qmqoCg=",
   "success": true,
-  "projectFilePath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.Plugins\\ERP.Plugins.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.Plugins/ERP.Plugins.csproj",
+  "expectedPackageFiles": [
+    "/home/underscore/.nuget/packages/microsoft.windowsdesktop.app.ref/8.0.13/microsoft.windowsdesktop.app.ref.8.0.13.nupkg.sha512"
+  ],
   "logs": []
 }

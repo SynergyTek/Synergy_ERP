@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ERP.Recruitment.Models
+namespace ERP.HRService.Recruitment.Models
 {
     public class JobPositionStage
     {

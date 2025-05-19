@@ -1,33 +1,66 @@
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\appsettings.Development.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\appsettings.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\ERP.InventoryService.exe
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\ERP.InventoryService.deps.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\ERP.InventoryService.runtimeconfig.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\ERP.InventoryService.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\ERP.InventoryService.pdb
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.csproj.AssemblyReference.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.GeneratedMSBuildEditorConfig.editorconfig
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.AssemblyInfoInputs.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.AssemblyInfo.cs
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.csproj.CoreCompileInputs.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.MvcApplicationPartsAssemblyInfo.cs
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.MvcApplicationPartsAssemblyInfo.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.sourcelink.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\staticwebassets.build.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\staticwebassets.development.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\staticwebassets\msbuild.ERP.InventoryService.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\staticwebassets\msbuild.build.ERP.InventoryService.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ERP.InventoryService.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ERP.InventoryService.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\scopedcss\bundle\ERP.InventoryService.styles.css
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.Inve.AA63CC61.Up2Date
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\refint\ERP.InventoryService.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.pdb
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ERP.InventoryService.genruntimeconfig.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.InventoryService\obj\Debug\net8.0\ref\ERP.InventoryService.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/appsettings.Development.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/appsettings.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.exe
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.deps.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.runtimeconfig.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.pdb
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.csproj.AssemblyReference.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.GeneratedMSBuildEditorConfig.editorconfig
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.AssemblyInfoInputs.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.AssemblyInfo.cs
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.csproj.CoreCompileInputs.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.MvcApplicationPartsAssemblyInfo.cs
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.MvcApplicationPartsAssemblyInfo.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.sourcelink.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets.build.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets.development.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets/msbuild.ERP.InventoryService.Microsoft.AspNetCore.StaticWebAssets.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets/msbuild.build.ERP.InventoryService.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ERP.InventoryService.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ERP.InventoryService.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets.pack.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/scopedcss/bundle/ERP.InventoryService.styles.css
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.Inve.AA63CC61.Up2Date
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/refint/ERP.InventoryService.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.pdb
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.genruntimeconfig.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ref/ERP.InventoryService.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/appsettings.Development.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/appsettings.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.deps.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.runtimeconfig.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/ERP.InventoryService.pdb
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.csproj.AssemblyReference.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.GeneratedMSBuildEditorConfig.editorconfig
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.AssemblyInfoInputs.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.AssemblyInfo.cs
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.csproj.CoreCompileInputs.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.MvcApplicationPartsAssemblyInfo.cs
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.MvcApplicationPartsAssemblyInfo.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.sourcelink.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets.build.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets.development.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets/msbuild.ERP.InventoryService.Microsoft.AspNetCore.StaticWebAssets.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets/msbuild.build.ERP.InventoryService.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ERP.InventoryService.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ERP.InventoryService.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/staticwebassets.pack.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/scopedcss/bundle/ERP.InventoryService.styles.css
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.Inve.AA63CC61.Up2Date
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/refint/ERP.InventoryService.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.pdb
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ERP.InventoryService.genruntimeconfig.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.InventoryService/obj/Debug/net8.0/ref/ERP.InventoryService.dll

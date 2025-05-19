@@ -1,49 +1,98 @@
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\appsettings.Development.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\appsettings.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\ERP.AgenticLayer.exe
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\ERP.AgenticLayer.deps.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\ERP.AgenticLayer.runtimeconfig.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\ERP.AgenticLayer.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\ERP.AgenticLayer.pdb
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.CommandLine.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.UserSecrets.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Hosting.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Configuration.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Console.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Debug.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.EventLog.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.EventSource.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.csproj.AssemblyReference.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.GeneratedMSBuildEditorConfig.editorconfig
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.AssemblyInfoInputs.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.AssemblyInfo.cs
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.csproj.CoreCompileInputs.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.sourcelink.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.Agen.4BABC95D.Up2Date
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\refint\ERP.AgenticLayer.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.pdb
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ERP.AgenticLayer.genruntimeconfig.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.AgenticLayer\obj\Debug\net8.0\ref\ERP.AgenticLayer.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/appsettings.Development.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/appsettings.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.exe
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.deps.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.runtimeconfig.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.pdb
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.CommandLine.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Json.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Physical.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Hosting.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.Debug.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventLog.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventSource.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.csproj.AssemblyReference.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.AssemblyInfoInputs.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.AssemblyInfo.cs
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.csproj.CoreCompileInputs.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.sourcelink.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.Agen.4BABC95D.Up2Date
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/refint/ERP.AgenticLayer.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.pdb
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.genruntimeconfig.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ref/ERP.AgenticLayer.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/appsettings.Development.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/appsettings.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.deps.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.runtimeconfig.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/ERP.AgenticLayer.pdb
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.CommandLine.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Json.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Physical.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Hosting.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.Debug.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventLog.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventSource.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.csproj.AssemblyReference.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.GeneratedMSBuildEditorConfig.editorconfig
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.AssemblyInfoInputs.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.AssemblyInfo.cs
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.csproj.CoreCompileInputs.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.sourcelink.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.Agen.4BABC95D.Up2Date
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/refint/ERP.AgenticLayer.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.pdb
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ERP.AgenticLayer.genruntimeconfig.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AgenticLayer/obj/Debug/net8.0/ref/ERP.AgenticLayer.dll

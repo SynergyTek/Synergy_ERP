@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.SalesService\\ERP.SalesService.csproj": {}
+    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.SalesService/ERP.SalesService.csproj": {}
   },
   "projects": {
-    "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.SalesService\\ERP.SalesService.csproj": {
+    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.SalesService/ERP.SalesService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.SalesService\\ERP.SalesService.csproj",
+        "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.SalesService/ERP.SalesService.csproj",
         "projectName": "ERP.SalesService",
-        "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.SalesService\\ERP.SalesService.csproj",
-        "packagesPath": "C:\\Users\\sumbul\\.nuget\\packages\\",
-        "outputPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.SalesService\\obj\\",
+        "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.SalesService/ERP.SalesService.csproj",
+        "packagesPath": "/home/underscore/.nuget/packages/",
+        "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.SalesService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sumbul\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/underscore/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,6 +59,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -69,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

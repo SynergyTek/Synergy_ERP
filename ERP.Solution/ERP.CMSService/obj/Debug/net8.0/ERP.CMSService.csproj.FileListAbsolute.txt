@@ -1,33 +1,66 @@
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\appsettings.Development.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\appsettings.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\ERP.CMSService.exe
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\ERP.CMSService.deps.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\ERP.CMSService.runtimeconfig.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\ERP.CMSService.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\ERP.CMSService.pdb
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.csproj.AssemblyReference.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.GeneratedMSBuildEditorConfig.editorconfig
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.AssemblyInfoInputs.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.AssemblyInfo.cs
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.csproj.CoreCompileInputs.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.MvcApplicationPartsAssemblyInfo.cs
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.MvcApplicationPartsAssemblyInfo.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.sourcelink.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\staticwebassets.build.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\staticwebassets.development.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\staticwebassets\msbuild.ERP.CMSService.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\staticwebassets\msbuild.build.ERP.CMSService.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ERP.CMSService.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ERP.CMSService.props
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\scopedcss\bundle\ERP.CMSService.styles.css
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSS.EBA694D0.Up2Date
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\refint\ERP.CMSService.dll
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.pdb
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ERP.CMSService.genruntimeconfig.cache
-D:\Synergy Projects\ERP\ERP.Solution\ERP.CMSService\obj\Debug\net8.0\ref\ERP.CMSService.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/appsettings.Development.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/appsettings.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.exe
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.deps.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.runtimeconfig.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.pdb
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.csproj.AssemblyReference.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.GeneratedMSBuildEditorConfig.editorconfig
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.AssemblyInfoInputs.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.AssemblyInfo.cs
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.csproj.CoreCompileInputs.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.MvcApplicationPartsAssemblyInfo.cs
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.MvcApplicationPartsAssemblyInfo.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.sourcelink.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets.build.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets.development.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets/msbuild.ERP.CMSService.Microsoft.AspNetCore.StaticWebAssets.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets/msbuild.build.ERP.CMSService.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ERP.CMSService.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ERP.CMSService.props
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets.pack.json
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/scopedcss/bundle/ERP.CMSService.styles.css
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSS.EBA694D0.Up2Date
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/refint/ERP.CMSService.dll
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.pdb
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.genruntimeconfig.cache
+D:/Synergy Projects/ERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ref/ERP.CMSService.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/appsettings.Development.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/appsettings.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.deps.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.runtimeconfig.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/ERP.CMSService.pdb
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.csproj.AssemblyReference.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.GeneratedMSBuildEditorConfig.editorconfig
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.AssemblyInfoInputs.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.AssemblyInfo.cs
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.csproj.CoreCompileInputs.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.MvcApplicationPartsAssemblyInfo.cs
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.MvcApplicationPartsAssemblyInfo.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.sourcelink.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets.build.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets.development.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets/msbuild.ERP.CMSService.Microsoft.AspNetCore.StaticWebAssets.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets/msbuild.build.ERP.CMSService.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ERP.CMSService.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ERP.CMSService.props
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/staticwebassets.pack.json
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/scopedcss/bundle/ERP.CMSService.styles.css
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSS.EBA694D0.Up2Date
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/refint/ERP.CMSService.dll
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.pdb
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ERP.CMSService.genruntimeconfig.cache
+/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.CMSService/obj/Debug/net8.0/ref/ERP.CMSService.dll

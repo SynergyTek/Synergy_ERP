@@ -4,7 +4,7 @@ using ERP.Recruitment.Interfaces;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using System.Linq;
-using ERP.Recruitment.Data;
+using ERP.HRService.Recruitment.Data;
 
 namespace ERP.Recruitment.Services
 {

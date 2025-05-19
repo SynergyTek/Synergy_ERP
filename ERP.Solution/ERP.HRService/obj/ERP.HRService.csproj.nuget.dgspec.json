@@ -1,27 +1,300 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj": {}
+    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj": {}
   },
   "projects": {
-    "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj": {
+    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj",
+        "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj",
         "projectName": "ERP.HRService",
-        "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj",
-        "packagesPath": "C:\\Users\\sumbul\\.nuget\\packages\\",
-        "outputPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\obj\\",
+        "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj",
+        "packagesPath": "/home/underscore/.nuget/packages/",
+        "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sumbul\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/underscore/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj": {
+                "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Data": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Elsa": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Elsa.CSharp": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Elsa.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Elsa.EntityFrameworkCore.PostgreSql": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Elsa.Identity": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Elsa.JavaScript": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Elsa.Liquid": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Elsa.Scheduling": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Elsa.Workflows.Api": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Humanizer": {
+              "target": "Package",
+              "version": "[3.0.0-beta.96, )"
+            },
+            "IKVM": {
+              "target": "Package",
+              "version": "[8.11.2, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Features": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Scripting": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.CodeAnalysis.Scripting.Common": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj",
+        "projectName": "Synergy.Business",
+        "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj",
+        "packagesPath": "/home/underscore/.nuget/packages/",
+        "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/underscore/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj": {
+                "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj",
+        "projectName": "Synergy.Data",
+        "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj",
+        "packagesPath": "/home/underscore/.nuget/packages/",
+        "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/underscore/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,13 +318,33 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "AutoMapper": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[14.0.0, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Humanizer": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[3.0.0-beta.96, )"
+            },
+            "IKVM": {
+              "target": "Package",
+              "version": "[8.11.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, )"
             }
           },
           "imports": [
@@ -65,15 +358,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

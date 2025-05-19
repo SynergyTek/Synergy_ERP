@@ -1,15 +1,10 @@
+using ERP.HRService.Recruitment.Models;
 using Microsoft.EntityFrameworkCore;
-using ERP.Recruitment.Models;
 
-namespace ERP.Recruitment.Data
+namespace ERP.HRService.Recruitment.Data
 {
-    public class RecruitmentDbContext : DbContext
+    public class RecruitmentDbContext(DbContextOptions<RecruitmentDbContext> options) : DbContext(options)
     {
-        public RecruitmentDbContext(DbContextOptions<RecruitmentDbContext> options)
-            : base(options)
-        {
-        }
-
         public DbSet<JobPosition> JobPositions { get; set; }
         public DbSet<JobApplication> JobApplications { get; set; }
         public DbSet<JobPositionStage> JobPositionStages { get; set; }
@@ -27,12 +22,12 @@ namespace ERP.Recruitment.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure JobPosition
-            modelBuilder.Entity<JobPosition>()
-                .HasMany(j => j.JobApplications)
-                .WithOne(a => a.JobPosition)
-                .HasForeignKey(a => a.JobPositionId)
-                .OnDelete(DeleteBehavior.Cascade);
+            // // Configure JobPosition
+            // modelBuilder.Entity<JobPosition>()
+            //     .HasMany(j => j.JobApplications)
+            //     .WithOne(a => a.JobPosition)
+            //     .HasForeignKey(a => a.JobPositionId)
+            //     .OnDelete(DeleteBehavior.Cascade);
 
             // Add indexes
             modelBuilder.Entity<JobPosition>()
@@ -52,7 +47,7 @@ namespace ERP.Recruitment.Data
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Configure SalaryPackage
-            modelBuilder.Entity<SalaryPackage>()
+            modelBuilder.Entity<JobApplication>()
                 .HasOne(s => s.JobPosition)
                 .WithOne()
                 .OnDelete(DeleteBehavior.Cascade);
