@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AuthService/ERP.AuthService.csproj": {}
+    "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.AuthService\\ERP.AuthService.csproj": {}
   },
   "projects": {
-    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AuthService/ERP.AuthService.csproj": {
+    "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.AuthService\\ERP.AuthService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AuthService/ERP.AuthService.csproj",
+        "projectUniqueName": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.AuthService\\ERP.AuthService.csproj",
         "projectName": "ERP.AuthService",
-        "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AuthService/ERP.AuthService.csproj",
-        "packagesPath": "/home/underscore/.nuget/packages/",
-        "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.AuthService/obj/",
+        "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.AuthService\\ERP.AuthService.csproj",
+        "packagesPath": "C:\\Users\\sumbul\\.nuget\\packages\\",
+        "outputPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.AuthService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/underscore/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sumbul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,12 +61,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -73,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

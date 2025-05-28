@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cf1DIHru2Sk=",
+  "dgSpecHash": "uwRxfxXchMY=",
   "success": true,
-  "projectFilePath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.Shared/ERP.Shared.csproj",
-  "expectedPackageFiles": [
-    "/home/underscore/.nuget/packages/microsoft.windowsdesktop.app.ref/8.0.13/microsoft.windowsdesktop.app.ref.8.0.13.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.Shared\\ERP.Shared.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

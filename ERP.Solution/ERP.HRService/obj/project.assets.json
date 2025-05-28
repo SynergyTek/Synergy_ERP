@@ -21147,32 +21147,34 @@
     ]
   },
   "packageFolders": {
-    "/home/underscore/.nuget/packages/": {}
+    "C:\\Users\\sumbul\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj",
+      "projectUniqueName": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj",
       "projectName": "ERP.HRService",
-      "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj",
-      "packagesPath": "/home/underscore/.nuget/packages/",
-      "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/obj/",
+      "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj",
+      "packagesPath": "C:\\Users\\sumbul\\.nuget\\packages\\",
+      "outputPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/underscore/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\sumbul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj": {
-              "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj"
+            "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Business\\Synergy.Business.csproj": {
+              "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Business\\Synergy.Business.csproj"
             }
           }
         }
@@ -21332,12 +21334,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.13, 8.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -21346,7 +21342,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -21354,7 +21350,7 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore.Design from 8.0.16 to 8.0.15. Reference the package directly from the project to select a different version. \n ERP.HRService -> Microsoft.EntityFrameworkCore.Tools 8.0.16 -> Microsoft.EntityFrameworkCore.Design (>= 8.0.16) \n ERP.HRService -> Microsoft.EntityFrameworkCore.Design (>= 8.0.15)",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore.Design from 8.0.16 to 8.0.15. Reference the package directly from the project to select a different version. \r\n ERP.HRService -> Microsoft.EntityFrameworkCore.Tools 8.0.16 -> Microsoft.EntityFrameworkCore.Design (>= 8.0.16) \r\n ERP.HRService -> Microsoft.EntityFrameworkCore.Design (>= 8.0.15)",
       "libraryId": "Microsoft.EntityFrameworkCore.Design",
       "targetGraphs": [
         "net8.0"

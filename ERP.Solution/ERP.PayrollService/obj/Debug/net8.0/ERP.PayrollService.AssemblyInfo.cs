@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERP.PayrollService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4a07a763143d4302409c6787d721b9276aff895")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a373f9394779729164f18fbc74d8e49c59b2f5e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERP.PayrollService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERP.PayrollService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

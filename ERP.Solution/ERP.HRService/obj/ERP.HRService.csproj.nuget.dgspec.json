@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj": {}
+    "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj": {}
   },
   "projects": {
-    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj": {
+    "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj",
+        "projectUniqueName": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj",
         "projectName": "ERP.HRService",
-        "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/ERP.HRService.csproj",
-        "packagesPath": "/home/underscore/.nuget/packages/",
-        "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/ERP.HRService/obj/",
+        "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\ERP.HRService.csproj",
+        "packagesPath": "C:\\Users\\sumbul\\.nuget\\packages\\",
+        "outputPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\ERP.HRService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/underscore/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sumbul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj": {
-                "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj"
+              "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Business\\Synergy.Business.csproj": {
+                "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Business\\Synergy.Business.csproj"
               }
             }
           }
@@ -187,12 +189,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -201,34 +197,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj": {
+    "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Business\\Synergy.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj",
+        "projectUniqueName": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Business\\Synergy.Business.csproj",
         "projectName": "Synergy.Business",
-        "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/Synergy.Business.csproj",
-        "packagesPath": "/home/underscore/.nuget/packages/",
-        "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Business/obj/",
+        "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Business\\Synergy.Business.csproj",
+        "packagesPath": "C:\\Users\\sumbul\\.nuget\\packages\\",
+        "outputPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/underscore/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sumbul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj": {
-                "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj"
+              "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Data\\Synergy.Data.csproj": {
+                "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Data\\Synergy.Data.csproj"
               }
             }
           }
@@ -264,37 +262,33 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj": {
+    "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Data\\Synergy.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj",
+        "projectUniqueName": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Data\\Synergy.Data.csproj",
         "projectName": "Synergy.Data",
-        "projectPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/Synergy.Data.csproj",
-        "packagesPath": "/home/underscore/.nuget/packages/",
-        "outputPath": "/home/underscore/RiderProjects/SynergyERP/ERP.Solution/Synergy.Data/obj/",
+        "projectPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Data\\Synergy.Data.csproj",
+        "packagesPath": "C:\\Users\\sumbul\\.nuget\\packages\\",
+        "outputPath": "D:\\Synergy Projects\\ERP\\ERP.Solution\\Synergy.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/underscore/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sumbul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -358,18 +352,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/underscore/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
