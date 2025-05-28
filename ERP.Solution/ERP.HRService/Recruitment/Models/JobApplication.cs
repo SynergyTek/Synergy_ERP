@@ -1,35 +1,27 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Synergy.Data.Model;
 
-namespace ERP.Recruitment.Models
+namespace ERP.HRService.Recruitment.Models
 {
-    public class JobApplication
+    public class JobApplication : BaseModel
     {
-        [Key]
-        public int Id { get; set; }
+        [Required] [ForeignKey("JobPosition")] public int JobPositionId { get; set; }
 
-        [Required]
-        [ForeignKey("JobPosition")]
-        public int JobPositionId { get; set; }
+        // Navigation property
+        public virtual JobPosition JobPosition { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string ApplicantName { get; set; }
+        [Required] [StringLength(100)] public string ApplicantName { get; set; }
 
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Required] [EmailAddress] public string Email { get; set; }
 
-        [Phone]
-        public string Phone { get; set; }
+        [Phone] public string Phone { get; set; }
 
         public string ResumeUrl { get; set; }
 
         public string CoverLetter { get; set; }
 
-        [Required]
-        public ApplicationStatus Status { get; set; }
+        [Required] public ApplicationStatus Status { get; set; }
 
         public DateTime ApplicationDate { get; set; }
 
@@ -42,9 +34,6 @@ namespace ERP.Recruitment.Models
         public decimal? ExpectedSalary { get; set; }
 
         public string Source { get; set; }
-
-        // Navigation property
-        public virtual JobPosition JobPosition { get; set; }
     }
 
     public enum ApplicationStatus
@@ -59,4 +48,4 @@ namespace ERP.Recruitment.Models
         OnHold,
         Withdrawn
     }
-} 
+}

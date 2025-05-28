@@ -1,9 +1,7 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ERP.Recruitment.Models
+namespace ERP.HRService.Recruitment.Models
 {
     public class RecruitmentCampaign
     {
