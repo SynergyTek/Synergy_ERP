@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "n8OpG5luvl2gJmlHEtzgj9fqLhGQuvttt24AloG0gaE=",
+  "Source": "ERP.PayrollService",
+  "BasePath": "_content/ERP.PayrollService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
