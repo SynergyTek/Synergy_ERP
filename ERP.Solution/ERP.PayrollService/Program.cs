@@ -27,6 +27,12 @@ builder.Services.AddScoped<IPayrollBatchRepository, PayrollBatchRepository>();
 builder.Services.AddScoped<IPayrollCalendarRepository, PayrollCalendarRepository>();
 builder.Services.AddScoped<IPayrollTaxConfigRepository, PayrollTaxConfigRepository>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<ILeaveRepository, LeaveRepository>();
+builder.Services.AddScoped<ILoanRepository, LoanRepository>();
+builder.Services.AddScoped<ILoanRepository, LoanRepository>();
+builder.Services.AddScoped<ICurrencyRateRepository, CurrencyRateRepository>();
+builder.Services.AddScoped<IPayslipAdjustmentRepository, PayslipAdjustmentRepository>();
+builder.Services.AddScoped<IPayslipStatusChangeLogRepository, PayslipStatusChangeLogRepository>();
 
 // Register services
 builder.Services.AddScoped<IPayrollService, PayrollService>();

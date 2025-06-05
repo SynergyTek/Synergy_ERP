@@ -10,5 +10,6 @@ namespace ERP.PayrollService.Interfaces
         Task<IEnumerable<PayslipViewModel>> GeneratePayslipsBatchAsync(List<int> employeeIds, int structureId, string periodStart, string periodEnd);
         Task<IEnumerable<PayslipViewModel>> GetPayslipsForEmployeeAsync(int employeeId);
         Task<PayslipViewModel> GetPayslipByIdAsync(int payslipId);
+        Task<bool> UpdatePayslipStatusAsync(int payslipId, string status, string reason = null);
     }
 } 

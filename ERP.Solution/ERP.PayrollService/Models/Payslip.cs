@@ -17,5 +17,9 @@ namespace ERP.PayrollService.Models
         public ICollection<PayslipLine> PayslipLines { get; set; }
         public int? PayrollBatchId { get; set; }
         public PayrollBatch PayrollBatch { get; set; }
+        public ICollection<WorkedDayInput> WorkedDayInputs { get; set; }
+        public string Currency { get; set; }
+        public ICollection<PayslipAdjustment> PayslipAdjustments { get; set; }
+        public string Status { get; set; } // Draft, Submitted, Approved, Rejected, Paid
     }
 } 

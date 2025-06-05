@@ -17,6 +17,15 @@ namespace ERP.PayrollService.Data
         public DbSet<PayrollBatch> PayrollBatches { get; set; }
         public DbSet<PayrollCalendar> PayrollCalendars { get; set; }
         public DbSet<PayrollTaxConfig> PayrollTaxConfigs { get; set; }
+        public DbSet<EmployeeContract> EmployeeContracts { get; set; }
+        public DbSet<WorkedDayInput> WorkedDayInputs { get; set; }
+        public DbSet<Leave> Leaves { get; set; }
+        public DbSet<Loan> Loans { get; set; }
+        public DbSet<CurrencyRate> CurrencyRates { get; set; }
+        public DbSet<PayslipAdjustment> PayslipAdjustments { get; set; }
+        public DbSet<LocalizationInfo> LocalizationInfos { get; set; }
+        public DbSet<RetroactiveChangeLog> RetroactiveChangeLogs { get; set; }
+        public DbSet<PayslipStatusChangeLog> PayslipStatusChangeLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -62,6 +71,36 @@ namespace ERP.PayrollService.Data
                 .HasOne(b => b.PayrollCalendar)
                 .WithMany(c => c.PayrollBatches)
                 .HasForeignKey(b => b.PayrollCalendarId);
+
+            // EmployeeContract
+            modelBuilder.Entity<EmployeeContract>()
+                .HasOne(ec => ec.Employee)
+                .WithMany(e => e.EmployeeContracts)
+                .HasForeignKey(ec => ec.EmployeeId);
+
+            // WorkedDayInput
+            modelBuilder.Entity<WorkedDayInput>()
+                .HasOne(wd => wd.Payslip)
+                .WithMany(p => p.WorkedDayInputs)
+                .HasForeignKey(wd => wd.PayslipId);
+
+            // Leave
+            modelBuilder.Entity<Leave>()
+                .HasOne(l => l.Employee)
+                .WithMany()
+                .HasForeignKey(l => l.EmployeeId);
+
+            // Loan
+            modelBuilder.Entity<Loan>()
+                .HasOne(l => l.Employee)
+                .WithMany()
+                .HasForeignKey(l => l.EmployeeId);
+
+            // PayslipAdjustment
+            modelBuilder.Entity<PayslipAdjustment>()
+                .HasOne(pa => pa.Payslip)
+                .WithMany(p => p.PayslipAdjustments)
+                .HasForeignKey(pa => pa.PayslipId);
         }
     }
 } 

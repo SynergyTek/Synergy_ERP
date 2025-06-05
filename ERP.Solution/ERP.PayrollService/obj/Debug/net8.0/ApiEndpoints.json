@@ -119,6 +119,125 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ERP.PayrollService.Controllers.CurrencyRateController",
+    "Method": "GetAll",
+    "RelativePath": "api/CurrencyRate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.CurrencyRate, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.CurrencyRateController",
+    "Method": "Create",
+    "RelativePath": "api/CurrencyRate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rate",
+        "Type": "ERP.PayrollService.Models.CurrencyRate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.CurrencyRate",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.CurrencyRateController",
+    "Method": "GetById",
+    "RelativePath": "api/CurrencyRate/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.CurrencyRate",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.CurrencyRateController",
+    "Method": "Update",
+    "RelativePath": "api/CurrencyRate/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "rate",
+        "Type": "ERP.PayrollService.Models.CurrencyRate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.CurrencyRate",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.CurrencyRateController",
+    "Method": "Delete",
+    "RelativePath": "api/CurrencyRate/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ERP.PayrollService.Controllers.DeductionController",
     "Method": "GetAll",
     "RelativePath": "api/Deduction",
@@ -147,7 +266,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "vm",
+        "Name": "deduction",
         "Type": "ERP.PayrollService.ViewModels.DeductionViewModel",
         "IsRequired": true
       }
@@ -204,7 +323,7 @@
         "IsRequired": true
       },
       {
-        "Name": "vm",
+        "Name": "deduction",
         "Type": "ERP.PayrollService.ViewModels.DeductionViewModel",
         "IsRequired": true
       }
@@ -357,6 +476,482 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ERP.PayrollService.Controllers.EmployeeContractController",
+    "Method": "GetAll",
+    "RelativePath": "api/EmployeeContract",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.EmployeeContract, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.EmployeeContractController",
+    "Method": "Create",
+    "RelativePath": "api/EmployeeContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contract",
+        "Type": "ERP.PayrollService.Models.EmployeeContract",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.EmployeeContract",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.EmployeeContractController",
+    "Method": "GetById",
+    "RelativePath": "api/EmployeeContract/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.EmployeeContract",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.EmployeeContractController",
+    "Method": "Update",
+    "RelativePath": "api/EmployeeContract/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "contract",
+        "Type": "ERP.PayrollService.Models.EmployeeContract",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.EmployeeContract",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.EmployeeContractController",
+    "Method": "Delete",
+    "RelativePath": "api/EmployeeContract/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LeaveController",
+    "Method": "GetAll",
+    "RelativePath": "api/Leave",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.Leave, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LeaveController",
+    "Method": "Create",
+    "RelativePath": "api/Leave",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leave",
+        "Type": "ERP.PayrollService.Models.Leave",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.Leave",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LeaveController",
+    "Method": "GetById",
+    "RelativePath": "api/Leave/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.Leave",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LeaveController",
+    "Method": "Update",
+    "RelativePath": "api/Leave/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "leave",
+        "Type": "ERP.PayrollService.Models.Leave",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.Leave",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LeaveController",
+    "Method": "Delete",
+    "RelativePath": "api/Leave/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LoanController",
+    "Method": "GetAll",
+    "RelativePath": "api/Loan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.Loan, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LoanController",
+    "Method": "Create",
+    "RelativePath": "api/Loan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loan",
+        "Type": "ERP.PayrollService.Models.Loan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.Loan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LoanController",
+    "Method": "GetById",
+    "RelativePath": "api/Loan/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.Loan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LoanController",
+    "Method": "Update",
+    "RelativePath": "api/Loan/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loan",
+        "Type": "ERP.PayrollService.Models.Loan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.Loan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LoanController",
+    "Method": "Delete",
+    "RelativePath": "api/Loan/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LocalizationInfoController",
+    "Method": "GetAll",
+    "RelativePath": "api/LocalizationInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.LocalizationInfo, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LocalizationInfoController",
+    "Method": "Create",
+    "RelativePath": "api/LocalizationInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "info",
+        "Type": "ERP.PayrollService.Models.LocalizationInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.LocalizationInfo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LocalizationInfoController",
+    "Method": "GetById",
+    "RelativePath": "api/LocalizationInfo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.LocalizationInfo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LocalizationInfoController",
+    "Method": "Update",
+    "RelativePath": "api/LocalizationInfo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "info",
+        "Type": "ERP.PayrollService.Models.LocalizationInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.LocalizationInfo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.LocalizationInfoController",
+    "Method": "Delete",
+    "RelativePath": "api/LocalizationInfo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ERP.PayrollService.Controllers.PayrollController",
     "Method": "GetCalendars",
     "RelativePath": "api/Payroll/calendars",
@@ -464,6 +1059,75 @@
     "Method": "DeleteCalendar",
     "RelativePath": "api/Payroll/calendars/{id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayrollController",
+    "Method": "ApprovePayslip",
+    "RelativePath": "api/Payroll/payslips/{id}/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayrollController",
+    "Method": "MarkPayslipPaid",
+    "RelativePath": "api/Payroll/payslips/{id}/mark-paid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayrollController",
+    "Method": "RejectPayslip",
+    "RelativePath": "api/Payroll/payslips/{id}/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reason",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayrollController",
+    "Method": "SubmitPayslip",
+    "RelativePath": "api/Payroll/payslips/{id}/submit",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -793,6 +1457,84 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ERP.PayrollService.Controllers.PayrollReportController",
+    "Method": "GetEmployeeHistory",
+    "RelativePath": "api/PayrollReport/employee-history/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.ViewModels.PayslipViewModel, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayrollReportController",
+    "Method": "ExportPayrollCsv",
+    "RelativePath": "api/PayrollReport/export-csv",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periodStart",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "periodEnd",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayrollReportController",
+    "Method": "GetSummaryByDepartment",
+    "RelativePath": "api/PayrollReport/summary-by-department",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periodStart",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "periodEnd",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ERP.PayrollService.Controllers.PayrollRuleController",
     "Method": "GetAll",
     "RelativePath": "api/PayrollRule",
@@ -1018,6 +1760,554 @@
     "ContainingType": "ERP.PayrollService.Controllers.PayrollTaxConfigController",
     "Method": "Delete",
     "RelativePath": "api/PayrollTaxConfig/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipAdjustmentController",
+    "Method": "GetAll",
+    "RelativePath": "api/PayslipAdjustment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.PayslipAdjustment, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipAdjustmentController",
+    "Method": "Create",
+    "RelativePath": "api/PayslipAdjustment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adjustment",
+        "Type": "ERP.PayrollService.Models.PayslipAdjustment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.PayslipAdjustment",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipAdjustmentController",
+    "Method": "GetById",
+    "RelativePath": "api/PayslipAdjustment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.PayslipAdjustment",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipAdjustmentController",
+    "Method": "Update",
+    "RelativePath": "api/PayslipAdjustment/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "adjustment",
+        "Type": "ERP.PayrollService.Models.PayslipAdjustment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.PayslipAdjustment",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipAdjustmentController",
+    "Method": "Delete",
+    "RelativePath": "api/PayslipAdjustment/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipLineController",
+    "Method": "GetAll",
+    "RelativePath": "api/PayslipLine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.PayslipLine, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipLineController",
+    "Method": "Create",
+    "RelativePath": "api/PayslipLine",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "line",
+        "Type": "ERP.PayrollService.Models.PayslipLine",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.PayslipLine",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipLineController",
+    "Method": "GetById",
+    "RelativePath": "api/PayslipLine/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.PayslipLine",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipLineController",
+    "Method": "Update",
+    "RelativePath": "api/PayslipLine/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "line",
+        "Type": "ERP.PayrollService.Models.PayslipLine",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.PayslipLine",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipLineController",
+    "Method": "Delete",
+    "RelativePath": "api/PayslipLine/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipLineController",
+    "Method": "GetByPayslipId",
+    "RelativePath": "api/PayslipLine/bypayslip/{payslipId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payslipId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.PayslipLine, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipStatusChangeLogController",
+    "Method": "GetAll",
+    "RelativePath": "api/PayslipStatusChangeLog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.PayslipStatusChangeLog, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.PayslipStatusChangeLogController",
+    "Method": "GetByPayslipId",
+    "RelativePath": "api/PayslipStatusChangeLog/bypayslip/{payslipId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payslipId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.PayslipStatusChangeLog, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.RetroactiveChangeLogController",
+    "Method": "GetAll",
+    "RelativePath": "api/RetroactiveChangeLog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.RetroactiveChangeLog, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.RetroactiveChangeLogController",
+    "Method": "Create",
+    "RelativePath": "api/RetroactiveChangeLog",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "log",
+        "Type": "ERP.PayrollService.Models.RetroactiveChangeLog",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.RetroactiveChangeLog",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.RetroactiveChangeLogController",
+    "Method": "GetById",
+    "RelativePath": "api/RetroactiveChangeLog/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.RetroactiveChangeLog",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.RetroactiveChangeLogController",
+    "Method": "Update",
+    "RelativePath": "api/RetroactiveChangeLog/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "log",
+        "Type": "ERP.PayrollService.Models.RetroactiveChangeLog",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.RetroactiveChangeLog",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.RetroactiveChangeLogController",
+    "Method": "Delete",
+    "RelativePath": "api/RetroactiveChangeLog/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.WorkedDayInputController",
+    "Method": "GetAll",
+    "RelativePath": "api/WorkedDayInput",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.PayrollService.Models.WorkedDayInput, ERP.PayrollService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.WorkedDayInputController",
+    "Method": "Create",
+    "RelativePath": "api/WorkedDayInput",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "ERP.PayrollService.Models.WorkedDayInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.WorkedDayInput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.WorkedDayInputController",
+    "Method": "GetById",
+    "RelativePath": "api/WorkedDayInput/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.WorkedDayInput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.WorkedDayInputController",
+    "Method": "Update",
+    "RelativePath": "api/WorkedDayInput/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "ERP.PayrollService.Models.WorkedDayInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.PayrollService.Models.WorkedDayInput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.PayrollService.Controllers.WorkedDayInputController",
+    "Method": "Delete",
+    "RelativePath": "api/WorkedDayInput/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

@@ -12,6 +12,9 @@ namespace ERP.PayrollService.Models
         public string Position { get; internal set; }
         public decimal BaseSalary { get; set; }
         public string Name { get; set; }
+        public ICollection<EmployeeContract> EmployeeContracts { get; set; }
+        public ICollection<Leave> Leaves { get; set; }
+        public ICollection<Loan> Loans { get; set; }
 
     }
 } 

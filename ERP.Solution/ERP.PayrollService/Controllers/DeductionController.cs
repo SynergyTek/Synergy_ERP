@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ERP.PayrollService.ViewModels;
+using ERP.PayrollService.Models;
 using ERP.PayrollService.Interfaces;
+using ERP.PayrollService.ViewModels;
 
 namespace ERP.PayrollService.Controllers
 {
@@ -25,24 +26,23 @@ namespace ERP.PayrollService.Controllers
             return Ok(result);
         }
         [HttpPost]
-        public async Task<ActionResult<DeductionViewModel>> Create(DeductionViewModel vm)
+        public async Task<ActionResult<DeductionViewModel>> Create(DeductionViewModel deduction)
         {
-            var result = await _service.CreateAsync(vm);
+            var result = await _service.CreateAsync(deduction);
             return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
         }
         [HttpPut("{id}")]
-        public async Task<ActionResult<DeductionViewModel>> Update(int id, DeductionViewModel vm)
+        public async Task<ActionResult<DeductionViewModel>> Update(int id, DeductionViewModel deduction)
         {
-            if (id != vm.Id) return BadRequest();
-            var result = await _service.UpdateAsync(vm);
+            if (id != deduction.Id) return BadRequest();
+            var result = await _service.UpdateAsync(deduction);
             if (result == null) return NotFound();
             return Ok(result);
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var deleted = await _service.DeleteAsync(id);
-            if (!deleted) return NotFound();
+            await _service.DeleteAsync(id);
             return NoContent();
         }
     }

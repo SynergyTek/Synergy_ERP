@@ -7,6 +7,7 @@ namespace ERP.PayrollService.Interfaces
 {
     public interface IPayrollReportService
     {
+        Task<IEnumerable<PayslipViewModel>> GetPayslipsForEmployeeAsync(int employeeId);
         Task<IEnumerable<PayslipViewModel>> GetPayslipsReportAsync(string periodStart, string periodEnd);
         Task<decimal> GetTotalPayrollAsync(string periodStart, string periodEnd);
     }

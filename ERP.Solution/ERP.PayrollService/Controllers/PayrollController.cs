@@ -7,6 +7,7 @@ using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
 using ERP.PayrollService.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ERP.PayrollService.Controllers
 {
@@ -130,6 +131,43 @@ namespace ERP.PayrollService.Controllers
             }).GeneratePdf();
 
             return File(pdfBytes, "application/pdf", $"payslip_{payslipId}.pdf");
+        }
+
+        // Payslip Workflow Endpoints
+        [HttpPost("payslips/{id}/submit")]
+        [Authorize(Roles = "Employee")]
+        public async Task<IActionResult> SubmitPayslip(int id)
+        {
+            var result = await _payslipService.UpdatePayslipStatusAsync(id, "Submitted");
+            if (!result) return NotFound();
+            return Ok();
+        }
+
+        [HttpPost("payslips/{id}/approve")]
+        [Authorize(Roles = "PayrollManager,HRManager")]
+        public async Task<IActionResult> ApprovePayslip(int id)
+        {
+            var result = await _payslipService.UpdatePayslipStatusAsync(id, "Approved");
+            if (!result) return NotFound();
+            return Ok();
+        }
+
+        [HttpPost("payslips/{id}/reject")]
+        [Authorize(Roles = "PayrollManager,HRManager")]
+        public async Task<IActionResult> RejectPayslip(int id, [FromBody] string reason)
+        {
+            var result = await _payslipService.UpdatePayslipStatusAsync(id, "Rejected", reason);
+            if (!result) return NotFound();
+            return Ok();
+        }
+
+        [HttpPost("payslips/{id}/mark-paid")]
+        [Authorize(Roles = "PayrollManager,HRManager")]
+        public async Task<IActionResult> MarkPayslipPaid(int id)
+        {
+            var result = await _payslipService.UpdatePayslipStatusAsync(id, "Paid");
+            if (!result) return NotFound();
+            return Ok();
         }
 
         // Reporting Endpoints

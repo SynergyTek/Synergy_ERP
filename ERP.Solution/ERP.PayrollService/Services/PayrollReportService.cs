@@ -16,6 +16,11 @@ namespace ERP.PayrollService.Services
             _payslipRepo = payslipRepo;
         }
 
+        public Task<IEnumerable<PayslipViewModel>> GetPayslipsForEmployeeAsync(int employeeId)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IEnumerable<PayslipViewModel>> GetPayslipsReportAsync(string periodStart, string periodEnd)
         {
             var payslips = await _payslipRepo.GetAllAsync();
