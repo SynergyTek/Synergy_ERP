@@ -34,6 +34,7 @@ builder.Services.AddScoped<ICurrencyRateRepository, CurrencyRateRepository>();
 builder.Services.AddScoped<IPayslipAdjustmentRepository, PayslipAdjustmentRepository>();
 builder.Services.AddScoped<IPayslipStatusChangeLogRepository, PayslipStatusChangeLogRepository>();
 
+
 // Register services
 builder.Services.AddScoped<IPayrollService, PayrollService>();
 builder.Services.AddScoped<IPayslipService, PayslipService>();
