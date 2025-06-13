@@ -25,7 +25,11 @@ namespace ERP.PayrollService.Services
                     Name = e.Name,
                     Department = e.Department,
                     Position = e.Position,
-                    BaseSalary = e.BaseSalary
+                    BaseSalary = e.BaseSalary,
+                    FirstName = e.FirstName,
+                    LastName = e.LastName,
+                    Address = e.Address,
+                    Email = e.Email,
                 });
             }
             return vms;
@@ -36,11 +40,14 @@ namespace ERP.PayrollService.Services
             if (e == null) return null;
             return new EmployeeViewModel
             {
-                Id = e.Id,
                 Name = e.Name,
                 Department = e.Department,
                 Position = e.Position,
-                BaseSalary = e.BaseSalary
+                BaseSalary = e.BaseSalary,
+                FirstName = e.FirstName,
+                LastName = e.LastName,
+                Address = e.Address,
+                Email = e.Email,
             };
         }
         public async Task<EmployeeViewModel> CreateAsync(EmployeeViewModel vm)
@@ -50,7 +57,11 @@ namespace ERP.PayrollService.Services
                 Name = vm.Name,
                 Department = vm.Department,
                 Position = vm.Position,
-                BaseSalary = vm.BaseSalary
+                BaseSalary = vm.BaseSalary,
+                FirstName = vm.FirstName,
+                LastName = vm.LastName,
+                Address = vm.Address,
+                Email = vm.Email,
             };
             var created = await _repo.AddAsync(entity);
             vm.Id = created.Id;
@@ -64,6 +75,11 @@ namespace ERP.PayrollService.Services
             entity.Department = vm.Department;
             entity.Position = vm.Position;
             entity.BaseSalary = vm.BaseSalary;
+            entity.Email = vm.Email;
+            entity.FirstName = vm.FirstName;
+            entity.LastName = vm.LastName;
+            entity.Address = vm.Address;
+
             await _repo.UpdateAsync(entity);
             return vm;
         }
@@ -72,4 +88,4 @@ namespace ERP.PayrollService.Services
             return await _repo.DeleteAsync(id);
         }
     }
-} 
+}

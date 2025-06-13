@@ -186,3 +186,5 @@ D:\Synergy Projects\ERP\ERP.Solution\ERP.PayrollService\obj\Debug\net8.0\refint\
 D:\Synergy Projects\ERP\ERP.Solution\ERP.PayrollService\obj\Debug\net8.0\ERP.PayrollService.pdb
 D:\Synergy Projects\ERP\ERP.Solution\ERP.PayrollService\obj\Debug\net8.0\ERP.PayrollService.genruntimeconfig.cache
 D:\Synergy Projects\ERP\ERP.Solution\ERP.PayrollService\obj\Debug\net8.0\ref\ERP.PayrollService.dll
+D:\Synergy Projects\ERP\ERP.Solution\ERP.PayrollService\bin\Debug\net8.0\ERP.PayrollService.xml
+D:\Synergy Projects\ERP\ERP.Solution\ERP.PayrollService\obj\Debug\net8.0\ERP.PayrollService.xml

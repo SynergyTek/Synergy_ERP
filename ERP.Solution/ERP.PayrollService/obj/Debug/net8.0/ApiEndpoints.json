@@ -378,7 +378,7 @@
   },
   {
     "ContainingType": "ERP.PayrollService.Controllers.EmployeeController",
-    "Method": "Create",
+    "Method": "CreateEmployee",
     "RelativePath": "api/Employee",
     "HttpMethod": "POST",
     "IsController": true,
@@ -398,13 +398,13 @@
           "application/json",
           "text/json"
         ],
-        "StatusCode": 200
+        "StatusCode": 201
       }
     ]
   },
   {
     "ContainingType": "ERP.PayrollService.Controllers.EmployeeController",
-    "Method": "GetById",
+    "Method": "GetEmployeeById",
     "RelativePath": "api/Employee/{id}",
     "HttpMethod": "GET",
     "IsController": true,
