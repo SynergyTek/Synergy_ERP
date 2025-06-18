@@ -15,8 +15,19 @@ namespace ERP.PayrollService.Controllers
         {
             _service = service;
         }
+        /// <summary>
+        /// Gets All PayslipLine 
+        /// </summary>
+        /// <returns>All PayslipLine Details</returns>
         [HttpGet]
         public async Task<IEnumerable<PayslipLine>> GetAll() => await _service.GetAllAsync();
+
+
+        /// <summary>
+        /// Gets a specific PayslipLine by ID.
+        /// </summary>
+        /// <param name="id">PayslipLine ID</param>
+        /// <returns>PayslipLine details</returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<PayslipLine>> GetById(int id)
         {
@@ -24,24 +35,65 @@ namespace ERP.PayrollService.Controllers
             if (result == null) return NotFound();
             return Ok(result);
         }
+        /// <summary>
+        /// Gets a specific PayslipLine by payslipId.
+        /// </summary>
+        /// <param name="payslipId"> payslipId</param>
+        /// <returns>PayslipLine details</returns>
+
         [HttpGet("bypayslip/{payslipId}")]
         public async Task<IEnumerable<PayslipLine>> GetByPayslipId(int payslipId) => await _service.GetByPayslipIdAsync(payslipId);
-        [HttpPost]
-        public async Task<ActionResult<PayslipLine>> Create(PayslipLine line)
+
+
+        /// <summary>
+        /// Creates a new  PayslipLine
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used during the onboarding workflow. It triggers creation of the  PayslipLine record.
+        /// Example input:
+        /// {
+        ///   "Name":"John",
+        ///   "Amount":"60000",
+        ///   "Type":"Earnings",
+        ///   "Description":"Monthly Salary",
+        ///  }
+        /// </remarks>
+        /// <param name="line">The  PayslipLine data to create</param>
+        /// <returns>Created  PayslipLine ID</returns>
+        [HttpPost("CreatePayslipLine")]
+        public async Task<ActionResult<PayslipLine>> CreatePayslipLine(PayslipLine line)
         {
             var result = await _service.CreateAsync(line);
             return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
         }
-        [HttpPut("{id}")]
-        public async Task<ActionResult<PayslipLine>> Update(int id, PayslipLine line)
+
+        /// <summary>
+        /// Updates the details of an existing payslip Linerecord.
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used to modify an existing PayslipLine entry based on the provided ID and updated data.
+        /// </remarks>
+        /// <param name="id">The ID of the PayslipLine to update.</param>
+        /// <param name="line">The updated PayslipLine data.</param>
+        /// <returns>The updated PayslipLine record.</returns>
+
+
+        [HttpPut("UpdatePayslipLine/{id}")]
+        public async Task<ActionResult<PayslipLine>> UpdatePayslipLine(int id, PayslipLine line)
         {
             if (id != line.Id) return BadRequest();
             var result = await _service.UpdateAsync(line);
             if (result == null) return NotFound();
             return Ok(result);
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+
+        /// <summary>
+        /// Delete the PayslipLine
+        /// </summary>
+        /// <param name="id"> PayslipLine ID</param>
+        /// <returns>Deleted PayslipLine ID</returns>
+        [HttpDelete("DeletePayslipLine/{id}")]
+        public async Task<IActionResult> DeletePayslipLine(int id)
         {
             await _service.DeleteAsync(id);
             return NoContent();

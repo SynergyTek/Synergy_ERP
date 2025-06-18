@@ -16,31 +16,69 @@ namespace ERP.PayrollService.Controllers
         {
             _service = service;
         }
+        /// <summary>
+        /// Gets All Deduction
+        /// </summary>
+        /// <returns>All  Deduction Details</returns>
         [HttpGet]
         public async Task<IEnumerable<DeductionViewModel>> GetAll() => await _service.GetAllAsync();
+
+        /// <summary>
+        /// Gets a specific  Deduction by ID.
+        /// </summary>
+        /// <param name="id"> Deduction ID</param>
+        /// <returns> Deduction details</returns>
+
         [HttpGet("{id}")]
-        public async Task<ActionResult<DeductionViewModel>> GetById(int id)
+        public async Task<ActionResult<DeductionViewModel>> GetDeductionById(int id)
         {
             var result = await _service.GetByIdAsync(id);
             if (result == null) return NotFound();
             return Ok(result);
         }
-        [HttpPost]
-        public async Task<ActionResult<DeductionViewModel>> Create(DeductionViewModel deduction)
+
+        /// <summary>
+        /// Creates a new  Deduction
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used during the onboarding workflow. It triggers creation of the  Deduction record.
+        ///{
+        ///   "Name":"John",
+        ///   "Amount":"500"
+        /// }
+        /// </remarks>
+        /// <param name="deduction">The  Deduction data to create</param>
+        /// <returns>Created  Deduction ID</returns>
+        [HttpPost("CreateDeduction")]
+        public async Task<ActionResult<DeductionViewModel>> CreateDeduction(DeductionViewModel deduction)
         {
             var result = await _service.CreateAsync(deduction);
-            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+            return CreatedAtAction(nameof(GetDeductionById), new { id = result.Id }, result);
         }
-        [HttpPut("{id}")]
-        public async Task<ActionResult<DeductionViewModel>> Update(int id, DeductionViewModel deduction)
+        /// <summary>
+        /// updates the existing  Deduction details
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used to edit the  existing  Deduction records.
+        /// </remarks>
+        /// <param name="id">The ID of the deduction to update</param>
+        /// <param name="deduction">The deduction data to update</param>
+        /// <returns>updated  Deduction details</returns>
+        [HttpPut("UpdateDeduction/{id}")]
+        public async Task<ActionResult<DeductionViewModel>> UpdateDeduction(int id, DeductionViewModel deduction)
         {
             if (id != deduction.Id) return BadRequest();
             var result = await _service.UpdateAsync(deduction);
             if (result == null) return NotFound();
             return Ok(result);
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        /// <summary>
+        /// Delete the  Deduction
+        /// </summary>
+        /// <param name="id"> Deduction ID</param>
+        /// <returns>Deleted Deduction ID</returns>
+        [HttpDelete("DeleteDeduction/{id}")]
+        public async Task<IActionResult> DeleteDeduction(int id)
         {
             await _service.DeleteAsync(id);
             return NoContent();

@@ -15,31 +15,66 @@ namespace ERP.PayrollService.Controllers
         {
             _service = service;
         }
+        /// <summary>
+        /// Gets All Leave details
+        /// </summary>
+        /// <returns>All Leave Details</returns>
         [HttpGet]
         public async Task<IEnumerable<Leave>> GetAll() => await _service.GetAllAsync();
+
+
+        /// <summary>
+        /// Gets a specific Leave by ID.
+        /// </summary>
+        /// <param name="id">Leave ID</param>
+        /// <returns>Leave details</returns>
+
         [HttpGet("{id}")]
-        public async Task<ActionResult<Leave>> GetById(int id)
+        public async Task<ActionResult<Leave>> GetLeaveById(int id)
         {
             var result = await _service.GetByIdAsync(id);
             if (result == null) return NotFound();
             return Ok(result);
         }
-        [HttpPost]
-        public async Task<ActionResult<Leave>> Create(Leave leave)
+        /// <summary>
+        /// Creates a new Leave
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used during the onboarding workflow. It triggers creation of the Leave record.
+        /// </remarks>
+        /// <param name="leave">The Leave data to create</param>
+        /// <returns>Created Leave ID</returns>
+        [HttpPost("CreateLeave")]
+        public async Task<ActionResult<Leave>> CreateLeave(Leave leave)
         {
             var result = await _service.CreateAsync(leave);
-            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+            return CreatedAtAction(nameof(GetLeaveById), new { id = result.Id }, result);
         }
-        [HttpPut("{id}")]
-        public async Task<ActionResult<Leave>> Update(int id, Leave leave)
+
+        /// <summary>
+        /// updates the existing Leave details
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used to edit the  existing Leave records.
+        /// </remarks>
+        /// <param name="id">Leave ID</param>
+        /// <param name="leave">Leave data </param>
+        /// <returns>updated Leave details</returns>
+        [HttpPut("UpdateLeave/{id}")]
+        public async Task<ActionResult<Leave>> UpdateLeave(int id, Leave leave)
         {
             if (id != leave.Id) return BadRequest();
             var result = await _service.UpdateAsync(leave);
             if (result == null) return NotFound();
             return Ok(result);
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        /// <summary>
+        /// Delete the Leave id
+        /// </summary>
+        /// <param name="id">Leave ID</param>
+        /// <returns>Deleted Leave ID</returns>
+        [HttpDelete("DeleteLeave/{id}")]
+        public async Task<IActionResult> DeleteLeave(int id)
         {
             await _service.DeleteAsync(id);
             return NoContent();

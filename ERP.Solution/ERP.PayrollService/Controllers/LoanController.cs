@@ -15,31 +15,69 @@ namespace ERP.PayrollService.Controllers
         {
             _service = service;
         }
+        /// <summary>
+        /// Gets All Loan details 
+        /// </summary>
+        /// <returns>All Loan Details</returns>
         [HttpGet]
         public async Task<IEnumerable<Loan>> GetAll() => await _service.GetAllAsync();
+
+        /// <summary>
+        /// Gets a specific Loan by ID.
+        /// </summary>
+        /// <param name="id">Loan ID</param>
+        /// <returns>Loan details</returns>
+
         [HttpGet("{id}")]
-        public async Task<ActionResult<Loan>> GetById(int id)
+        public async Task<ActionResult<Loan>> GetLoanById(int id)
         {
             var result = await _service.GetByIdAsync(id);
             if (result == null) return NotFound();
             return Ok(result);
         }
-        [HttpPost]
-        public async Task<ActionResult<Loan>> Create(Loan loan)
+
+        /// <summary>
+        /// Creates a new Loan
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used during the onboarding workflow. It triggers creation of the Loan record.
+        /// </remarks>
+        /// <param name="loan">The Loan data to create</param>
+        /// <returns>Created Loan ID</returns>
+        [HttpPost("CreateLoan")]
+        public async Task<ActionResult<Loan>> CreateLoan(Loan loan)
         {
             var result = await _service.CreateAsync(loan);
-            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+            return CreatedAtAction(nameof(GetLoanById), new { id = result.Id }, result);
         }
-        [HttpPut("{id}")]
-        public async Task<ActionResult<Loan>> Update(int id, Loan loan)
+
+        /// <summary>
+        /// updates the existing Loan details
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used to edit the  existing Loan records.
+        /// </remarks>
+        /// <param name="id">Loan ID</param>
+        /// <param name="loan">Loan data </param>
+        /// <returns>updated Loan details</returns>
+
+        [HttpPut("UpdateLoan/{id}")]
+        public async Task<ActionResult<Loan>> UpdateLoan(int id, Loan loan)
         {
             if (id != loan.Id) return BadRequest();
             var result = await _service.UpdateAsync(loan);
             if (result == null) return NotFound();
             return Ok(result);
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+
+
+        /// <summary>
+        /// Delete the Loan
+        /// </summary>
+        /// <param name="id">Loan ID</param>
+        /// <returns>Deleted Loan ID</returns>
+        [HttpDelete("DeleteLoan/{id}")]
+        public async Task<IActionResult> DeleteLoan(int id)
         {
             await _service.DeleteAsync(id);
             return NoContent();

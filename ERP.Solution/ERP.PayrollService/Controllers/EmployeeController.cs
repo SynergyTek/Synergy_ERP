@@ -15,8 +15,12 @@ namespace ERP.PayrollService.Controllers
         {
             _service = service;
         }
+        /// <summary>
+        /// Gets All employee 
+        /// </summary>
+        /// <returns>All Employee Details</returns>
         [HttpGet]
-        public async Task<IEnumerable<EmployeeViewModel>> GetAll() => await _service.GetAllAsync();
+        public async Task<IEnumerable<EmployeeViewModel>> GetAllEmployee() => await _service.GetAllAsync();
 
         /// <summary>
         /// Gets a specific employee by ID.
@@ -53,23 +57,42 @@ namespace ERP.PayrollService.Controllers
         /// <param name="request">The employee data to create</param>
         /// <returns>Created employee's ID</returns>
 
-        [HttpPost]
+        [HttpPost("CreateEmployee")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<ActionResult<EmployeeViewModel>> CreateEmployee(EmployeeViewModel vm)
         {
             var result = await _service.CreateAsync(vm);
             return CreatedAtAction(nameof(GetEmployeeById), new { id = result.Id }, result);
         }
-        [HttpPut("{id}")]
-        public async Task<ActionResult<EmployeeViewModel>> Update(int id, EmployeeViewModel vm)
+
+
+
+        /// <summary>
+        /// updates the existing employee details
+        /// </summary>
+        /// <remarks>
+        /// This endpoint is used to edit the  existing employee records.
+        /// </remarks>
+        /// <param name="id">Employee ID to update</param>
+        /// <param name="vm">Employee  data to update</param>
+        /// <returns>updated Employee details</returns>
+        [HttpPut("UpdateEmployee/{id}")]
+        public async Task<ActionResult<EmployeeViewModel>> UpdateEmployee(int id, EmployeeViewModel vm)
         {
             if (id != vm.Id) return BadRequest();
             var result = await _service.UpdateAsync(vm);
             if (result == null) return NotFound();
             return Ok(result);
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+
+
+        /// <summary>
+        /// Delete the employee
+        /// </summary>
+        /// <param name="id">Employee ID</param>
+        /// <returns>Deleted Employee ID</returns>
+        [HttpDelete("DeleteEmployee/{id}")]
+        public async Task<IActionResult> DeleteEmployee(int id)
         {
             var deleted = await _service.DeleteAsync(id);
             if (!deleted) return NotFound();

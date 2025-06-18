@@ -17,6 +17,12 @@ namespace ERP.PayrollService.Controllers
         {
             _reportService = reportService;
         }
+        /// <summary>
+        /// Retrieves a payroll summary grouped by department for the specified date range.
+        /// </summary>
+        /// <param name="periodStart">The start date of the payroll period.</param>
+        /// <param name="periodEnd">The end date of the payroll period.</param>
+        /// <returns>A summary report containing total gross pay, total net pay, and employee count per department.</returns>
 
         [HttpGet("summary-by-department")]
         public async Task<ActionResult<IEnumerable<object>>> GetSummaryByDepartment([FromQuery] string periodStart, [FromQuery] string periodEnd)
@@ -32,6 +38,11 @@ namespace ERP.PayrollService.Controllers
                 });
             return Ok(summary);
         }
+        /// <summary>
+        /// Retrieves the payroll history for a specific employee based on their ID.
+        /// </summary>
+        /// <param name="employeeId">The unique identifier of the employee.</param>
+        /// <returns>A list of payslip records associated with the specified employee.</returns>
 
         [HttpGet("employee-history/{employeeId}")]
         public async Task<ActionResult<IEnumerable<PayslipViewModel>>> GetEmployeeHistory(int employeeId)
@@ -39,6 +50,12 @@ namespace ERP.PayrollService.Controllers
             var payslips = await _reportService.GetPayslipsForEmployeeAsync(employeeId);
             return Ok(payslips);
         }
+        /// <summary>
+        /// Exports the payroll report as a CSV file for the specified date range.
+        /// </summary>
+        /// <param name="periodStart">The start date of the payroll period.</param>
+        /// <param name="periodEnd">The end date of the payroll period.</param>
+        /// <returns>A CSV file containing payroll data for the given period.</returns>
 
         [HttpGet("export-csv")]
         public async Task<IActionResult> ExportPayrollCsv([FromQuery] string periodStart, [FromQuery] string periodEnd)

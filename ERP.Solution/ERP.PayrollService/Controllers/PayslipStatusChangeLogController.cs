@@ -15,8 +15,19 @@ namespace ERP.PayrollService.Controllers
         {
             _repo = repo;
         }
+        /// <summary>
+        /// Gets All PayslipStatusChangeLog 
+        /// </summary>
+        /// <returns>All PayslipStatusChangeLog Details</returns>
         [HttpGet]
         public async Task<IEnumerable<PayslipStatusChangeLog>> GetAll() => await _repo.GetAllAsync();
+
+
+        /// <summary>
+        /// Gets a specific PayslipStatusChangeLog by payslipId.
+        /// </summary>
+        /// <param name="payslipId"> payslipId</param>
+        /// <returns>PayslipStatusChangeLog details</returns>
         [HttpGet("bypayslip/{payslipId}")]
         public async Task<IEnumerable<PayslipStatusChangeLog>> GetByPayslipId(int payslipId) => await _repo.GetByPayslipIdAsync(payslipId);
     }
