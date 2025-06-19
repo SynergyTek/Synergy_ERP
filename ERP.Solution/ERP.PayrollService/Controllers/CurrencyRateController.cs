@@ -61,7 +61,7 @@ namespace ERP.PayrollService.Controllers
         /// <param name="id">The ID of the currency rate to update.</param>
         /// <param name="rate">The currency rate data to update.</param>
         /// <returns>The updated CurrencyRate record, or 404 if not found.</returns>
-
+        [HttpPut("UpdateCurrencyRate/{id}")]
         public async Task<ActionResult<CurrencyRate>> UpdateCurrencyRate(int id, CurrencyRate rate)
         {
             if (id != rate.Id) return BadRequest();
