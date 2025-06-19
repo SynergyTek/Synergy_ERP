@@ -61,7 +61,7 @@ namespace ERP.PayrollService.Controllers
         /// <param name="id"> LocalizationInfo ID</param>
         /// <param name="info"> LocalizationInfo data</param>
         /// <returns>updated LocalizationInfo details</returns>
-        [HttpPut(" UpdateLocalizationInfo/{id}")]
+        [HttpPut("UpdateLocalizationInfo/{id}")]
         public async Task<ActionResult<LocalizationInfo>> UpdateLocalizationInfo(int id, LocalizationInfo info)
         {
             if (id != info.Id) return BadRequest();

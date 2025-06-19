@@ -56,7 +56,7 @@ namespace ERP.PayrollService.Controllers
         /// </summary>
         /// <param name="ViewModel">The PayrollStructure data to create</param>
         /// <returns>Created PayrollStructure ID</returns>
-        [HttpPost("Createstructures")]
+        [HttpPost("CreateStructures")]
         public async Task<ActionResult<PayrollStructureViewModel>> CreateStructure(PayrollStructureViewModel ViewModel)
         {
             var result = await _payrollService.CreatePayrollStructureAsync(ViewModel);
@@ -68,8 +68,8 @@ namespace ERP.PayrollService.Controllers
         /// </summary>
         /// <param name="id">Leave ID</param>
         /// <param name="ViewModel">PayrollStructure ViewModel </param>
-        /// <returns>update the PayrollStructure details</returns>
-        [HttpPut("structures/{id}")]
+        /// <returns>updated PayrollStructure details</returns>
+        [HttpPut("UpdateStructures/{id}")]
         public async Task<ActionResult<PayrollStructureViewModel>> UpdateStructure(int id, PayrollStructureViewModel ViewModel)
         {
             if (id != ViewModel.Id) return BadRequest();
@@ -82,9 +82,9 @@ namespace ERP.PayrollService.Controllers
         /// Delete the PayrollStructure Id
         /// </summary>
         /// <param name="id">PayrollStructure Id</param>
-        /// <returns>Delete PayrollStructure Id</returns>
+        /// <returns>Deleted PayrollStructure </returns>
 
-        [HttpDelete("structures/{id}")]
+        [HttpDelete("DeleteStructures/{id}")]
         public async Task<IActionResult> DeleteStructure(int id)
         {
             var deleted = await _payrollService.DeletePayrollStructureAsync(id);
@@ -139,10 +139,13 @@ namespace ERP.PayrollService.Controllers
             return Ok(result);
         }
         /// <summary>
-        /// DownloadPayslip Pdf by  payslipId
+        /// Generates and downloads a PDF version of the payslip for the specified payslip ID.
         /// </summary>
-        /// <param name="payslipId">payslipId</param>
-        /// <returns>Download the PayslipPdf</returns>
+        /// <param name="payslipId">The unique identifier of the payslip to be downloaded.</param>
+        /// <returns>
+        /// Returns a PDF file containing the payslip details.
+        /// </returns>
+
         [HttpGet("payslips/{payslipId}/pdf")]
         public async Task<IActionResult> DownloadPayslipPdf(int payslipId)
         {
@@ -294,9 +297,9 @@ namespace ERP.PayrollService.Controllers
         /// <summary>
         /// updates the existing PayrollCalendar details
         /// </summary>
-        /// <param name="id">PayrollCalendar Id</param>
-        /// <param name="ViewModel">PayrollCalendar ViewModel </param>
-        /// <returns>update the PayrollCalendar details</returns>
+        /// <param name="id">PayrollCalendar Id to update </param>
+        /// <param name="ViewModel">PayrollCalendar data </param>
+        /// <returns>updated PayrollCalendar details</returns>
         [HttpPut("Updatecalendars/{id}")]
         public async Task<ActionResult<PayrollCalendarViewModel>> UpdateCalendar(int id, PayrollCalendarViewModel ViewModel)
         {
@@ -309,7 +312,7 @@ namespace ERP.PayrollService.Controllers
         /// Delete the PayrollCalendar Id
         /// </summary>
         /// <param name="id">PayrollCalendar Id</param>
-        /// <returns>Delete PayrollCalendar Id</returns>
+        /// <returns>Deleted PayrollCalendar Id</returns>
         [HttpDelete("Deletecalendars/{id}")]
         public async Task<IActionResult> DeleteCalendar(int id)
         {

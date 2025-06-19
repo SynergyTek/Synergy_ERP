@@ -75,7 +75,7 @@ namespace ERP.PayrollService.Controllers
         /// <param name="id">EmployeeContract ID</param>
         /// <returns>Deleted EmployeeContract ID</returns>
         [HttpDelete("DeleteEmployeeContract/{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult>DeleteEmployeeContract(int id)
         {
             var deleted = await _service.DeleteAsync(id);
             if (!deleted) return NotFound();
