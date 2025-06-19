@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERP.PayrollService", "ERP.P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0622391D-2E77-4DB1-9FE4-2452ECBC47AD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERP.API", "ERP.API\ERP.API.csproj", "{53FF4D7A-DCC7-46A2-B97B-A575397B53AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{BC4F111A-A676-4240-A701-960732B1AB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC4F111A-A676-4240-A701-960732B1AB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC4F111A-A676-4240-A701-960732B1AB8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53FF4D7A-DCC7-46A2-B97B-A575397B53AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FF4D7A-DCC7-46A2-B97B-A575397B53AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FF4D7A-DCC7-46A2-B97B-A575397B53AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FF4D7A-DCC7-46A2-B97B-A575397B53AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
