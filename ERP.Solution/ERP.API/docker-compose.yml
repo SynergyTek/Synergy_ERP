@@ -1,0 +1,11 @@
+services:
+  erp:
+    build: .
+    container_name: erp-payroll-container
+    ports:
+      - "5100:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:80
+      ConnectionStrings__DefaultConnection: "Host=5.189.153.176;Port=6432;Database=ERP;Username=postgres;Password=Synergywelcome1"
+    restart: always
