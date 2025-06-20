@@ -26,6 +26,6 @@ namespace ERP.PayrollService.Models
         public ICollection<EmployeeContract> EmployeeContracts { get; set; }
         public ICollection<Leave> Leaves { get; set; }
         public ICollection<Loan> Loans { get; set; }
-
+        public object JoiningDate { get; set; }
     }
 } 

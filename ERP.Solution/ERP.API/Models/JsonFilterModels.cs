@@ -57,4 +57,23 @@ namespace ERP.API.Models
         public SortOption? Sort { get; set; }
         public Pagination? Pagination { get; set; }
     }
+
+    /// <summary>
+    /// Aggregate operation for grouping and aggregation.
+    /// </summary>
+    public class AggregateOperation
+    {
+        public string Field { get; set; } = string.Empty;
+        public string Operation { get; set; } = string.Empty; // e.g., count, sum, avg
+    }
+
+    /// <summary>
+    /// Request model for aggregate queries.
+    /// </summary>
+    public class AggregateRequest
+    {
+        public List<string> GroupBy { get; set; } = new();
+        public List<AggregateOperation> Aggregates { get; set; } = new();
+        public LogicalFilter? Filter { get; set; }
+    }
 } 

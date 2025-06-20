@@ -26,6 +26,36 @@ namespace ERP.API.Helpers
             return source.Where(lambda);
         }
 
+        // IEnumerable<T> version for in-memory filtering
+        public static IEnumerable<T> WhereDynamic<T>(this IEnumerable<T> source, string field, string op, string value)
+        {
+            foreach (var item in source)
+            {
+                var prop = typeof(T).GetProperty(field, System.Reflection.BindingFlags.IgnoreCase | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+                if (prop == null) continue;
+                var propValue = prop.GetValue(item);
+                var compareValue = Convert.ChangeType(value, prop.PropertyType);
+                int cmp = 0;
+                if (propValue is IComparable comp)
+                    cmp = comp.CompareTo(compareValue);
+                else if (propValue != null && propValue.Equals(compareValue))
+                    cmp = 0;
+                else
+                    cmp = -1;
+                bool match = op switch
+                {
+                    "==" => Equals(propValue, compareValue),
+                    "!=" => !Equals(propValue, compareValue),
+                    ">" => cmp > 0,
+                    ">=" => cmp >= 0,
+                    "<" => cmp < 0,
+                    "<=" => cmp <= 0,
+                    _ => false
+                };
+                if (match) yield return item;
+            }
+        }
+
         public static IQueryable<T> WhereDynamicIn<T>(this IQueryable<T> source, string field, List<string> values)
         {
             var param = System.Linq.Expressions.Expression.Parameter(typeof(T), "e");
@@ -37,6 +67,19 @@ namespace ERP.API.Helpers
             return source.Where(lambda);
         }
 
+        // IEnumerable<T> version for in-memory filtering
+        public static IEnumerable<T> WhereDynamicIn<T>(this IEnumerable<T> source, string field, List<string> values)
+        {
+            foreach (var item in source)
+            {
+                var prop = typeof(T).GetProperty(field, System.Reflection.BindingFlags.IgnoreCase | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+                if (prop == null) continue;
+                var propValue = prop.GetValue(item)?.ToString();
+                if (propValue != null && values.Contains(propValue))
+                    yield return item;
+            }
+        }
+
         public static IQueryable<T> OrderByDynamic<T>(this IQueryable<T> source, string field)
         {
             return source.OrderBy(e => EF.Property<object>(e, field));
@@ -45,6 +88,17 @@ namespace ERP.API.Helpers
         {
             return source.OrderByDescending(e => EF.Property<object>(e, field));
         }
-      
+
+        // IEnumerable<T> versions for in-memory sorting
+        public static IEnumerable<T> OrderByDynamic<T>(this IEnumerable<T> source, string field)
+        {
+            var prop = typeof(T).GetProperty(field, System.Reflection.BindingFlags.IgnoreCase | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+            return prop == null ? source : source.OrderBy(e => prop.GetValue(e));
+        }
+        public static IEnumerable<T> OrderByDescendingDynamic<T>(this IEnumerable<T> source, string field)
+        {
+            var prop = typeof(T).GetProperty(field, System.Reflection.BindingFlags.IgnoreCase | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+            return prop == null ? source : source.OrderByDescending(e => prop.GetValue(e));
+        }
     }
 }
