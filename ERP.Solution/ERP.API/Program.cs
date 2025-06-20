@@ -2,10 +2,6 @@ using ERP.HRService.Data;
 using ERP.HRService.Interfaces;
 using ERP.HRService.Repositories;
 using ERP.HRService.Services;
-using ERP.PayrollService.Data;
-using ERP.PayrollService.Interfaces;
-using ERP.PayrollService.Repositories;
-using ERP.PayrollService.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 

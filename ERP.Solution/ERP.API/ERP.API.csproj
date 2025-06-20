@@ -9,13 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Payroll\**" />
-    <Content Remove="Payroll\**" />
-    <EmbeddedResource Remove="Payroll\**" />
-    <None Remove="Payroll\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="DynamicExpresso.Core" Version="2.19.2" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.5">
@@ -29,7 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ERP.HRService\ERP.HRService.csproj" />
-    <ProjectReference Include="..\ERP.PayrollService\ERP.PayrollService.csproj" />
   </ItemGroup>
 
 </Project>

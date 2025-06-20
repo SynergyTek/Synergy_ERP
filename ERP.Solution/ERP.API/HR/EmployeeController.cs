@@ -4,7 +4,6 @@ using ERP.HRService.Data;
 using ERP.HRService.Interfaces;
 using ERP.HRService.Models;
 using ERP.HRService.ViewModels;
-using ERP.PayrollService.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
