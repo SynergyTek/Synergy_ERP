@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  erp:
+    build:
+      context: .
+      dockerfile: ERP.API/Dockerfile
+    container_name: erp-api-container
+    ports:
+      - "5100:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:80
+      ConnectionStrings__DefaultConnection: "Host=5.189.153.176;Port=6432;Database=ERP;Username=postgres;Password=Synergywelcome1"
+    restart: always
