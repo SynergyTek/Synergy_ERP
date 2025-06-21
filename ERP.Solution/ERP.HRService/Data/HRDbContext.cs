@@ -15,6 +15,8 @@ namespace ERP.HRService.Data
         public DbSet<Leave> Leaves { get; set; }
         public DbSet<Skill> Skills { get; set; }
         public DbSet<EmployeeSkill> EmployeeSkills { get; set; }
+        public DbSet<Conversation> Conversations { get; set; }
+        public DbSet<ChatMessage> ChatMessages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -71,6 +73,24 @@ namespace ERP.HRService.Data
                 .WithMany(e => e.Leaves)
                 .HasForeignKey(l => l.EmployeeId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Conversation>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Title).IsRequired().HasMaxLength(255);
+                entity.Property(e => e.UserId).IsRequired();
+                entity.HasMany(e => e.ChatMessages)
+                    .WithOne(cm => cm.Conversation)
+                    .HasForeignKey(cm => cm.ConversationId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<ChatMessage>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Message).IsRequired();
+                entity.Property(e => e.Role).IsRequired().HasMaxLength(50);
+            });
         }
     }
 } 
