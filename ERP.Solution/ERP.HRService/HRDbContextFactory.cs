@@ -10,7 +10,7 @@ namespace ERP.HRService
         {
             var optionsBuilder = new DbContextOptionsBuilder<HRDbContext>();
             // Use the same connection string as in your appsettings.json or environment
-            optionsBuilder.UseNpgsql("Host=5.189.153.176;Port=6432;User ID=postgres;Password=Synergywelcome1;Database=ERP;Pooling=false;CommandTimeout=300;Timeout=300;");
+            optionsBuilder.UseNpgsql("Host=5.189.153.176;Port=5432;User ID=postgres;Password=Synergywelcome1;Database=ERP;Pooling=true;CommandTimeout=300;Timeout=300;");
             return new HRDbContext(optionsBuilder.Options);
         }
     }

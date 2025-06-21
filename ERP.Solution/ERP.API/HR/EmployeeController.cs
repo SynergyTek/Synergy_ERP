@@ -387,10 +387,11 @@ namespace ERP.API.HR
         [HttpGet("schema")]
         public IActionResult GetEmployeeSchema()
         {
+            Console.WriteLine("Inside GetEmployeeSchema");
             var type = typeof(Employee);
             var properties = type.GetProperties();
             var fields = new List<object>();
-
+           
             foreach (var prop in properties)
             {
                 // Skip navigation properties (collections or complex types)
