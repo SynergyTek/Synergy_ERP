@@ -87,7 +87,7 @@ namespace ERP.API.Controllers
 
             const string url = "https://ai.aitalkx.com/es_agentic_summary";
 
-            //await AddMessage(query, "user", sessionId);
+            await AddMessage(query, "user", sessionId);
 
             try
             {
@@ -98,7 +98,7 @@ namespace ERP.API.Controllers
                 var json = await response.Content.ReadAsStringAsync();
                 var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-                //await AddMessage(json, "rasa-bot", sessionId);
+                await AddMessage(json, "rasa-bot", sessionId);
 
                 return Ok(data);
             }
