@@ -46,6 +46,10 @@ builder.Services.AddScoped<ERP.HRService.Interfaces.ILeaveRepository, ERP.HRServ
 builder.Services.AddScoped<ERP.HRService.Interfaces.ISkillRepository, ERP.HRService.Repositories.SkillRepository>();
 builder.Services.AddScoped<ERP.HRService.Interfaces.ISkillService, ERP.HRService.Services.SkillService >();
 
+builder.Services.AddHttpClient();
+
+builder.Services.AddCors();
+
 // Register repositories
 //builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 //builder.Services.AddScoped<IPayrollStructureRepository, PayrollStructureRepository>();
@@ -86,6 +90,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// Use CORS
+app.UseCors(builder => builder
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
 app.UseAuthorization();
 
