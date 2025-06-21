@@ -3,6 +3,7 @@ using ERP.HRService.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Linq;
 using System.Net.Http;
@@ -78,7 +79,6 @@ namespace ERP.API.Controllers
         {
             using var client = new HttpClient();
 
-            // Correct the payload keys to match API expectations
             var payload = new
             {
                 session_id = sessionId,
@@ -93,14 +93,12 @@ namespace ERP.API.Controllers
             {
                 var response = await client.PostAsJsonAsync(url, payload);
 
-                response.EnsureSuccessStatusCode(); // throws exception for non-success codes
+                response.EnsureSuccessStatusCode();
 
                 var json = await response.Content.ReadAsStringAsync();
-                var data = JsonConvert.DeserializeObject<dynamic>(json);
-
+                var jToken = JToken.Parse(json); 
                 await AddMessage(json, "rasa-bot", sessionId);
-
-                return Ok(data);
+                return Content(jToken.ToString(), "application/json");
             }
             catch (Exception ex)
             {
