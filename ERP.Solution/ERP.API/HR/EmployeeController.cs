@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using System.Text.Json;
+using Pagination = ERP.HRService.Models.Pagination;
+using SortOption = ERP.HRService.Models.SortOption;
 
 namespace ERP.API.HR
 {
@@ -19,8 +21,8 @@ namespace ERP.API.HR
         private readonly IEmployeeService _employeeService;
         private readonly IDepartmentService _departmentService;
         private readonly IJobService _jobService;
-        private static readonly HashSet<string> AllowedFields = new() { "name", "department", "salary", "joiningDate", "job" };
         private const int MaxPageSize = 100;
+        
         public EmployeeController(IEmployeeService employeeService, IDepartmentService departmentService, IJobService jobService)
         {
             _employeeService = employeeService;
@@ -187,44 +189,37 @@ namespace ERP.API.HR
             [FromQuery] string? pagination = null,
             [FromQuery] string? fields = null)
         {
-            LogicalFilter? filterObj = null;
-            SortOption? sortObj = null;
-            Pagination? paginationObj = null;
-            if (!string.IsNullOrWhiteSpace(filter))
-                filterObj = JsonSerializer.Deserialize<LogicalFilter>(filter);
-            if (!string.IsNullOrWhiteSpace(sort))
-                sortObj = JsonSerializer.Deserialize<SortOption>(sort);
+            // Parse pagination parameters
+            int page = 1;
+            int pageSize = 20;
+            
             if (!string.IsNullOrWhiteSpace(pagination))
-                paginationObj = JsonSerializer.Deserialize<Pagination>(pagination);
-
-            var query = await _employeeService.GetAllAsync();
-            query = ApplyJsonFilter(query, filterObj);
-            query = ApplySorting(query, sortObj);
-            query = ApplyPagination(query, paginationObj);
-
-            List<string>? selectedFields = null;
-            if (!string.IsNullOrWhiteSpace(fields))
-                selectedFields = fields.Split(',').Select(f => f.Trim()).ToList();
-
-            var result = query.ToList();
-            if (selectedFields != null && selectedFields.Count > 0)
             {
-                var shaped = result.Select(emp =>
+                var paginationObj = JsonSerializer.Deserialize<Pagination>(pagination);
+                if (paginationObj != null)
                 {
-                    var dict = new Dictionary<string, object?>();
-                    var type = typeof(EmployeeViewModel);
-                    var vm = ToViewModel(emp);
-                    foreach (var field in selectedFields)
-                    {
-                        var prop = type.GetProperty(field, System.Reflection.BindingFlags.IgnoreCase | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
-                        if (prop != null)
-                            dict[field] = prop.GetValue(vm);
-                    }
-                    return dict;
-                }).ToList();
-                return Ok(new { data = shaped });
+                    page = Math.Max(1, paginationObj.Page);
+                    pageSize = Math.Min(MaxPageSize, Math.Max(1, paginationObj.PageSize));
+                }
             }
-            return Ok(new { data = result.Select(ToViewModel).ToList() });
+
+            // Parse sorting parameters
+            string? sortField = null;
+            string? sortOrder = null;
+            if (!string.IsNullOrWhiteSpace(sort))
+            {
+                var sortObj = JsonSerializer.Deserialize<SortOption>(sort);
+                if (sortObj != null)
+                {
+                    sortField = sortObj.Field;
+                    sortOrder = sortObj.Order;
+                }
+            }
+
+            // Use optimized service method for filtering, sorting, and pagination
+            var (data, totalCount) = await _employeeService.GetFilteredEmployeesAsync(filter, page, pageSize, fields, sortField, sortOrder);
+
+            return Ok(new { data, totalCount, page, pageSize });
         }
 
         /// <summary>
@@ -261,42 +256,53 @@ namespace ERP.API.HR
             [FromQuery] string? filter = null,
             [FromQuery] int page = 1,
             [FromQuery] int pageSize = 20,
-            [FromQuery] string? fields = null)
+            [FromQuery] string? fields = null,
+            [FromQuery] string? sortField = null,
+            [FromQuery] string? sortOrder = null)
         {
-            LogicalFilter? filterObj = null;
-            if (!string.IsNullOrWhiteSpace(filter))
-                filterObj = System.Text.Json.JsonSerializer.Deserialize<LogicalFilter>(filter);
-            var query = await _employeeService.GetAllAsync();
-            query = ApplyJsonFilter(query, filterObj);
-            query = query.Skip((page - 1) * pageSize).Take(pageSize);
-            var employees = query.ToList();
-            List<string>? selectedFields = null;
-            if (!string.IsNullOrWhiteSpace(fields))
-                selectedFields = fields.Split(',').Select(f => f.Trim()).ToList();
-            object data;
-            if (selectedFields != null && selectedFields.Count > 0)
-            {
-                data = employees.Select(emp =>
-                {
-                    var dict = new Dictionary<string, object?>();
-                    var type = typeof(EmployeeViewModel);
-                    var vm = ToViewModel(emp);
-                    foreach (var field in selectedFields)
-                    {
-                        var prop = type.GetProperty(field, System.Reflection.BindingFlags.IgnoreCase | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
-                        if (prop != null)
-                            dict[field] = prop.GetValue(vm);
-                    }
-                    return dict;
-                }).ToList();
-            }
-            else
-            {
-                data = employees.Select(ToViewModel).ToList();
-            }
+            // Use the optimized service method for better performance
+            var employees = await _employeeService.GetEmployeesWithLookupsAsync(filter, page, pageSize, fields, sortField, sortOrder);
             var departments = (await _departmentService.GetAllAsync()).Select(d => new DepartmentViewModel { Id = d.Id, Name = d.Name }).ToList();
             var jobs = (await _jobService.GetAllAsync()).Select(j => new JobViewModel { Id = j.Id, Name = j.Name, Description = j.Description }).ToList();
-            return Ok(new { data, departments, jobs });
+            return Ok(new { data = employees, departments, jobs });
+        }
+
+        /// <summary>
+        /// Optimized list employees with filtering, pagination, and field selection handled at the service layer.
+        /// LLM: Use this for better performance when retrieving filtered, paginated lists of employees.
+        /// Example Request:
+        ///   GET /api/v1/employee/list-optimized?filter={"and":[{"department":{"eq":"Finance"}}]}&fields=id,name,joiningDate&page=1&pageSize=2
+        /// Example Response:
+        ///   {
+        ///     "data": [
+        ///       {
+        ///         "id": "emp_123",
+        ///         "name": "Alice Johnson",
+        ///         "joiningDate": "2021-05-01"
+        ///       }
+        ///     ],
+        ///     "totalCount": 15,
+        ///     "page": 1,
+        ///     "pageSize": 2
+        ///   }
+        /// </summary>
+        [HttpGet("list-optimized")]
+        public async Task<ActionResult> GetEmployeeListOptimized(
+            [FromQuery] string? filter = null,
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 20,
+            [FromQuery] string? fields = null,
+            [FromQuery] string? sortField = null,
+            [FromQuery] string? sortOrder = null)
+        {
+            var (data, totalCount) = await _employeeService.GetFilteredEmployeesAsync(filter, page, pageSize, fields, sortField, sortOrder);
+            return Ok(new { 
+                data, 
+                totalCount, 
+                page, 
+                pageSize,
+                totalPages = (int)Math.Ceiling((double)totalCount / pageSize)
+            });
         }
 
         /// <summary>
@@ -319,41 +325,27 @@ namespace ERP.API.HR
             [FromQuery] string? filter = null,
             [FromQuery] string? fields = null)
         {
-            LogicalFilter? filterObj = null;
-            if (!string.IsNullOrWhiteSpace(filter))
-                filterObj = System.Text.Json.JsonSerializer.Deserialize<LogicalFilter>(filter);
-            var query = await _employeeService.GetAllAsync();
-            query = ApplyJsonFilter(query, filterObj);
-            List<string>? selectedFields = null;
-            if (!string.IsNullOrWhiteSpace(fields))
-                selectedFields = fields.Split(',').Select(f => f.Trim()).ToList();
+            // Use optimized service method to get filtered employees
+            var employees = await _employeeService.GetEmployeesWithLookupsAsync(filter, 1, int.MaxValue, fields);
+            
             if (group_by != "department" || aggregate_field != "id" || aggregate_op != "count")
                 return BadRequest("Only group_by=department and aggregate_field=id&aggregate_op=count are supported in this demo.");
-            var grouped = query.GroupBy(e => e.Department)
+            
+            var grouped = employees.GroupBy(e => e.Department)
                 .Select(g => new {
-                    department = g.Key == null ? null : new DepartmentViewModel { Id = g.Key.Id, Name = g.Key.Name },
+                    department = g.Key,
                     count_id = g.Count(),
-                    employees = g.Select(ToViewModel).ToList()
+                    employees = g.ToList()
                 })
                 .ToList();
+                
             var result = grouped.Select(g => new Dictionary<string, object?>
             {
                 ["department"] = g.department,
                 ["count_id"] = g.count_id,
-                ["employees"] = selectedFields != null && selectedFields.Count > 0
-                    ? g.employees.Select(emp => {
-                        var dict = new Dictionary<string, object?>();
-                        var type = typeof(EmployeeViewModel);
-                        foreach (var field in selectedFields)
-                        {
-                            var prop = type.GetProperty(field, System.Reflection.BindingFlags.IgnoreCase | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
-                            if (prop != null)
-                                dict[field] = prop.GetValue(emp);
-                        }
-                        return dict;
-                    }).ToList()
-                    : g.employees
+                ["employees"] = g.employees
             }).ToList();
+            
             return Ok(new { data = result });
         }
 
@@ -372,64 +364,9 @@ namespace ERP.API.HR
             [FromQuery] string? filter = null,
             [FromQuery] string? fields = null)
         {
-            LogicalFilter? filterObj = null;
-            if (!string.IsNullOrWhiteSpace(filter))
-                filterObj = System.Text.Json.JsonSerializer.Deserialize<LogicalFilter>(filter);
-            var query = await _employeeService.GetAllAsync();
-            query = ApplyJsonFilter(query, filterObj);
-            // The count endpoint typically doesn't use fields, but you can add logic if needed
-            var count = query.Count();
-            return Ok(new { count });
-        }
-
-        // Helper methods for filtering, sorting, and pagination
-        private IEnumerable<T> ApplyJsonFilter<T>(IEnumerable<T> query, LogicalFilter? filter)
-        {
-            if (filter == null) return query;
-            // Only support AND for simplicity; extend as needed
-            if (filter.And != null)
-            {
-                foreach (var cond in filter.And)
-                {
-                    foreach (var field in cond.Keys)
-                    {
-                        if (!AllowedFields.Contains(field)) continue;
-                        var value = cond[field];
-                        if (value.Eq != null)
-                            query = query.WhereDynamic(field, "==", value.Eq);
-                        if (value.Gt != null)
-                            query = query.WhereDynamic(field, ">", value.Gt);
-                        if (value.Gte != null)
-                            query = query.WhereDynamic(field, ">=", value.Gte);
-                        if (value.Lt != null)
-                            query = query.WhereDynamic(field, "<", value.Lt);
-                        if (value.Lte != null)
-                            query = query.WhereDynamic(field, "<=", value.Lte);
-                        if (value.Neq != null)
-                            query = query.WhereDynamic(field, "!=", value.Neq);
-                        if (value.In != null && value.In.Count > 0)
-                            query = query.WhereDynamicIn(field, value.In);
-                    }
-                }
-            }
-            // TODO: Add OR support if needed
-            return query;
-        }
-
-        private IEnumerable<T> ApplySorting<T>(IEnumerable<T> query, SortOption? sort)
-        {
-            if (sort == null || !AllowedFields.Contains(sort.Field)) return query;
-            return sort.Order.ToLower() == "desc"
-                ? query.OrderByDescendingDynamic(sort.Field)
-                : query.OrderByDynamic(sort.Field);
-        }
-
-        private IEnumerable<T> ApplyPagination<T>(IEnumerable<T> query, Pagination? pagination)
-        {
-            if (pagination == null) return query.Take(20);
-            var page = Math.Max(1, pagination.Page);
-            var pageSize = Math.Min(MaxPageSize, Math.Max(1, pagination.PageSize));
-            return query.Skip((page - 1) * pageSize).Take(pageSize);
+            // Use the optimized service method to get count with filtering
+            var (_, totalCount) = await _employeeService.GetFilteredEmployeesAsync(filter, 1, 1, fields);
+            return Ok(new { count = totalCount });
         }
 
         /// <summary>
